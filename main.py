@@ -118,7 +118,7 @@ def envoyer_telegram(message):
 
 
 def analyse_et_envoi():
-    print("\ud83d\udd39 Début de l'analyse hockey...")
+    print("Début de l'analyse hockey...")
     matches = get_today_matches()[:25]
     paris_du_jour = []
 
