@@ -117,27 +117,6 @@ def envoyer_telegram(message):
 
 def analyse_et_envoi():
     print("🚀 Démarrage de l'analyse hockey...")
-    print("Test API: Appel API pour récupérer les matchs")
-    matches = get_today_matches()[:25]
-    paris_du_jour = []
-
-    for match in matches:
-        pari = detect_value_bet(match)
-        time.sleep(1)
-        if pari:
-            paris_du_jour.append(pari)
-        if len(paris_du_jour) == 2:
-            break
-
-    print(f"🎯 Nombre de paris sélectionnés : {len(paris_du_jour)}")
-
-    if paris_du_jour:
-        message = construire_message(paris_du_jour)
-    else:
-        message = "🚨 Aucun value bet hockey trouvé aujourd'hui."
-
-    envoyer_telegram(message)
-
     matches = get_today_matches()[:25]
     paris_du_jour = []
 
