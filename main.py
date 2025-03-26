@@ -11,7 +11,7 @@ log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
 
 API_KEY = "04e7128d2c962dcc02f6467c87d66afc"
-BASE_URL = "https://v3.football.api-sports.io"
+BASE_URL = "https://v1.hockey.api-sports.io"
 HEADERS = {"x-apisports-key": API_KEY}
 
 TELEGRAM_BOT_TOKEN = "7774934258:AAFf5ECLzRJeaNn-vqkFbVuNPs1pdO59JsU"
